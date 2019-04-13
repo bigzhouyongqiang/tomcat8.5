@@ -70,9 +70,9 @@
 
 ## 制作镜像
 
-`docker ps -a`  查看容器id
-`docker commit 刚刚制作的容器id tomcat8.5:1.0`
-`docker images` 查看制作成功的镜像
+1. `docker ps -a`  查看容器id
+2. `docker commit 刚刚制作的容器id tomcat8.5:1.0`
+3. `docker images` 查看制作成功的镜像
 
 
 ## 使用tomcat8.5:1.0创建tomcat容器
