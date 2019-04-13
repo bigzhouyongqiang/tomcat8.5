@@ -28,7 +28,7 @@
 1. 安装docker
 `yum install docker`
 `systemctl start docker`
-2. 中国镜像设置，pull/push进行的时候速度快点
+2. 中国镜像设置，pull/push进行的时候速度快点<br>
     `vi /etc/docker/daemon.json`
 
     ```
@@ -36,9 +36,9 @@
             "registry-mirrors":["https://registry.docker-cn.com"] 
         }
     ```
-3. pull centos:7镜像
+3. pull centos:7镜像<br>
 `docker pull centos:7`
-4. 启动centos:7进行配置
+4. 启动centos:7进行配置<br>
 `docker run --privileged=true -it -v /home/software/:/mnt/software/ centos:7 /bin/bash`
 
     ```
@@ -53,7 +53,7 @@
     - ***tomcat 8.5***安装
          - `tar -zxf apache-tomcat-8.5.39.tar.gz`
          - `mv apache-tomcat-8.5.3/ /opt/tomcat/`
-5. 编写运行脚本 
+5. 编写运行脚本 <br>
     `touch /root/run.sh`
     `vi /root/run.sh`
 
@@ -66,7 +66,8 @@
     
     `chmod u+x /root/run.sh`  为脚本添加权限
     
-6. 退出容器
+6. 退出容器<br>
+    `exit`
 
 ## 制作镜像
 
