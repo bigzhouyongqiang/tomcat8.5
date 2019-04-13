@@ -72,14 +72,14 @@
 ## 制作镜像
 
 1. `docker ps -a`  查看容器id
-2. `docker commit 刚刚制作的容器id tomcat8.5:1.0`
+2. `docker commit 刚刚制作的容器id tomcat8.5`
 3. `docker images` 查看制作成功的镜像
 
 
-## 使用tomcat8.5:1.0创建tomcat容器
+## 使用tomcat8.5创建tomcat容器
 1. 从tomcat的webapps目录下面的ROOT文件放入/home/test/ 中
 2. 创建容器端口映射为8000,挂在目录为/home/test/，**--privileged=true** 这个运行参数必须要有<br>
- `docker run -p 8000:8080 -d --privileged=true -v /home/test/:/opt/tomcat/webapps/ bigzhouyq/tomcat8.5:1.0 /root/run.sh`
+ `docker run -p 8000:8080 -d --privileged=true -v /home/test/:/opt/tomcat/webapps/ bigzhouyq/tomcat8.5 /root/run.sh`
 3. 浏览器访问http://192.168.56.2:8000/ 访问成功
 
 -------
